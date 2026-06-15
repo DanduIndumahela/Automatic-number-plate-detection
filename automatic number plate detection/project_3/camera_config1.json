@@ -1,0 +1,41 @@
+{
+  "locations": {
+    "RGM": "C01",
+    "Dongu": "C02",
+    "PANYAM": "C03",
+    "KURNOOL": "C04",
+    "Hyderabad": "C05"
+  },
+  "camera_graph": {
+    "C01": ["C02"],
+    "C02": ["C03"],
+    "C03": ["C04", "C05"],
+    "C04": []
+  },
+  "link_details": {
+    "C01->C02": {
+      "distance_km": 5.0,
+      "avg_speed_kmph": 50,
+      "buffer_before_min": 5,
+      "buffer_after_min": 10
+    },
+    "C02->C03": {
+      "distance_km": 1.0,
+      "avg_speed_kmph": 40,
+      "buffer_before_min": 5,
+      "buffer_after_min": 10
+    },
+    "C03->C04": {
+      "distance_km": 1.0,
+      "avg_speed_kmph": 40,
+      "buffer_before_min": 5,
+      "buffer_after_min": 10
+    },
+    "C03->C05": {
+      "distance_km": 150.0,
+      "avg_speed_kmph": 50,
+      "buffer_before_min": 5,
+      "buffer_after_min": 10
+    }
+  }
+}
